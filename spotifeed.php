@@ -37,8 +37,10 @@
         $the_tracks[] = $the_track;
     }
     
-    $the_tracks = array_slice($the_tracks, -$limit)
-
+    if($the_tracks) {
+        $the_tracks = array_slice($the_tracks, -$limit);
+    }
+    
     //echo count($the_tracks);
     //print_r($the_tracks);
 
