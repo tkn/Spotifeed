@@ -7,7 +7,7 @@
     $BASE_TRACK_URL = "http://open.spotify.com/track/";
     
     /* Settings - these may be changed! */
-    $the_uri = "spotify:user:tkndk:playlist:3kVvQq7ZECq0PAj4Ue9n9u"; //"spotify:user:ulyssestone:playlist:2D50pNwa1xmbiUhqM6KDiG";
+    $the_uri = "";
     $limit = 10;
         
     /* Functions */
@@ -58,7 +58,7 @@
         	echo "<item>";
         	echo 	"<title>".$track['title']."</title>";
         	echo 	"<description>".$track['artist']."</description>";
-        	echo 	"<link>".$BASE_TRACK_URL.$track['uri']."</link>";
+        	echo 	"<link>".$BASE_TRACK_URL.$track['uri']."+".$the_uri."</link>";
         	echo 	"<guid>".$track['uri']."</guid>";
         	echo "</item>";
         }
