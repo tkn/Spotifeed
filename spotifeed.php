@@ -60,7 +60,6 @@
         	echo 	"<description>".$track['artist']."</description>";
         	echo 	"<link>".$BASE_TRACK_URL.$track['uri']."</link>";
         	echo 	"<guid>".$track['uri']."</guid>";
-        	echo 	"<pubDate>Mon, 06 Sep 2009 16:45:00 +0000 </pubDate>";
         	echo "</item>";
         }
     }
